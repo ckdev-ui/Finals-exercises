@@ -22,6 +22,10 @@ try:
         print(file.read())
 
 except FileNotFoundError:
-    print("No users found yet.")
+    print("\nNo users found yet.")
 
+<<<<<<< HEAD:Finals_exercise_3.py
 print("System complete.")
+=======
+print("System complete.")
+>>>>>>> ce38fd6ffbac6eb79c5f7c49f935ecc8f88d59cf:Finals_exercise_3/Finals_exercise_3.py
