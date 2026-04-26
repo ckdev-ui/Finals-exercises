@@ -22,6 +22,6 @@ try:
         print(file.read())
 
 except FileNotFoundError:
-    print("No users found yet.")
+    print("\nNo users found yet.")
 
 print("System complete.")
