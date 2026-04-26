@@ -1,13 +1,10 @@
 try:
-    # Ask user input
     username = input("Enter username: ")
-    age = int(input("Enter age: "))  # possible error if not a number
+    age = int(input("Enter age: "))  
 
-    # Validate input
     if username.strip() == "" or age <= 0:
         raise ValueError("Invalid input.")
 
-    # Save to file
     with open("users.txt", "a") as file:
         file.write(f"{username} - {age}\n")
 
@@ -19,7 +16,6 @@ except ValueError:
 except Exception as e:
     print("Unexpected error:", e)
 
-# Display all users from file
 try:
     print("\nSaved Users:")
     with open("users.txt", "r") as file:
@@ -28,5 +24,4 @@ try:
 except FileNotFoundError:
     print("No users found yet.")
 
-# Always display
 print("System complete.")
